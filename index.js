@@ -24,7 +24,7 @@ function saveMessage(chatId, messageId) {
 
 
 // Handle the /link command
-bot.command('link', async (ctx) => {
+bot.command('generate_link', async (ctx) => {
     await ctx.reply('Please enter the amount of USDT:')
     userStates[ctx.chat.id] = { awaitingUSDT: true }
 })
